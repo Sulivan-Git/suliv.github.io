@@ -2,7 +2,7 @@
 <h1 align="center">👋 Olá! Eu sou o Sulivan de Oliveira Silva</h1>
 
 <p align="center">
-  Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (3º semestre), desenvolvedor em formação e apaixonado por tecnologia, projetos práticos e soluções que realmente ajudam pessoas.
+  Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (4º semestre), desenvolvedor em formação e apaixonado por tecnologia, projetos práticos e soluções que realmente ajudam pessoas.
 </p>
 
 ## 🚀 Sobre mim
