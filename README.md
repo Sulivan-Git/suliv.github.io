@@ -15,7 +15,7 @@
   - **G-Stock** — Sistema de Gerenciamento de Estoque *(Projeto Integrador)*  
   - **Sistema de Biblioteca** em **C/C++**  
   - **Peneirada FC** — Rede social e plataforma web em produção  
-- 🌎 Portfólio: https://suliv.github.io  
+- 🌎 Portfólio: https://sulivan-git.github.io/suliv.github.io/  
 - 🔗 LinkedIn: https://www.linkedin.com/in/sullywan  
 
 ---
