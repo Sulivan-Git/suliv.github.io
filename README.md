@@ -17,7 +17,7 @@
   - **Peneirada FC** — Rede social e plataforma web em produção  
 - 🌎 Portfólio: https://sulivan-git.github.io/suliv.github.io/  
 - 🔗 LinkedIn: https://www.linkedin.com/in/sullywan  
-
+- 💼 Curriculo: https://curriculo.sougov.economia.gov.br/sulivan-silva-321701528
 ---
 
 ## 🧠 Habilidades & Tecnologias
