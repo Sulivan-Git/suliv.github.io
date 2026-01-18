@@ -92,7 +92,7 @@ Construir uma carreira sólida em tecnologia, começando como **estagiário na �
 ## 📫 Contato
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sullywan)  
-[![Portfólio](https://img.shields.io/badge/-Portfólio-000000?style=flat&logo=github&logoColor=white)](https://suliv.github.io)  
+[![Portfólio](https://img.shields.io/badge/-Portfólio-000000?style=flat&logo=github&logoColor=white)](https://sulivan-git.github.io/suliv.github.io/)  
 [![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:sulivan.silva07@gmail.com)
 
 ---
