@@ -6,439 +6,205 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Portfólio · Sulivan de Oliveira Silva</title>
-  <meta name="description" content="Portfólio de Sulivan de Oliveira Silva — estudante de ADS (5º semestre), focado em Java, C++ e Desenvolvimento Web. Projetos: Peneirada FC (produção), G-Stock e Sistema de Biblioteca.">
+  <meta name="description" content="Portfólio de Sulivan de Oliveira Silva — estudante de ADS (5º semestre), focado em Java, C++ e Desenvolvimento Web. Projetos: Peneirada FC, G-Stock e Sistema de Biblioteca.">
   <meta name="theme-color" content="#0f172a">
 
   <!-- Canonical -->
   https://sulivan-git.github.io/
 
-  <!-- Open Graph / Social -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Portfólio · Sulivan de Oliveira Silva">
-  <meta property="og:description" content="Estudante de ADS (5º semestre). Projetos em destaque: Peneirada FC (produção), G-Stock (Java) e Sistema de Biblioteca (C/C++).">
+  <meta property="og:description" content="Estudante de ADS (5º semestre). Projetos em destaque: Peneirada FC, G-Stock e Sistema de Biblioteca.">
   <meta property="og:type" content="website">
-  https://sulivan-git.github.io/
-  https://sulivan-git.github.io/og-image.png
+  <meta property="og:url" content="https://sulivan-git.github.io/">
+  <meta property="og:image" content="https://sulivan-git.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Prévia do portfólio de Sulivan de Oliveira Silva">
-  <meta property="og:site_name" content="Portfólio · Sulivan de Oliveira Silva">
+  <meta property="og:image:alt" content="Prévia do portfólio de Sulivan">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Portfólio · Sulivan de Oliveira Silva">
+
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
   favicon-32.png
   favicon.png
 
-  <!-- Fonts (preconnect) -->
+  <!-- Fonts -->
   https://fonts.googleapis.com
   https://fonts.gstatic.com
   https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap
 
-  <!-- (Opcional) Preload da imagem hero para melhorar LCP -->
-  img/sulivan-768.jpg
-
-  <!-- Estilos -->
-  <style>
-    :root {
-      --bg: #0f172a;           /* slate-900 */
-      --text: #e2e8f0;         /* slate-200 */
-      --muted: #94a3b8;        /* slate-400 */
-      --primary: #06b6d4;      /* cyan-500 */
-      --primary-contrast: #001017;
-      --card: #111827;         /* gray-900 */
-      --card-border: #1f2937;  /* gray-800 */
-      --success: #22c55e;      /* green-500 */
-    }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --text: #0f172a;
-        --muted: #475569;
-        --primary: #0ea5e9;      /* sky-500 */
-        --primary-contrast: #ffffff;
-        --card: #ffffff;
-        --card-border: #e2e8f0;
-        --success: #16a34a;
-      }
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(1200px 600px at 10% 0%, rgba(14,165,233,.12), transparent 40%),
-        radial-gradient(900px 500px at 90% 10%, rgba(34,197,94,.12), transparent 40%),
-        var(--bg);
-      line-height: 1.6;
-    }
-
-    /* Containers */
-    .container { width: min(1100px, 92%); margin: 0 auto; }
-
-    /* Skip link */
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: 0;
-      background: var(--primary);
-      color: var(--primary-contrast);
-      padding: 8px 12px;
-      border-radius: 6px;
-      z-index: 1000;
-    }
-    .skip-link:focus { left: 8px; top: 8px; }
-
-    /* Header */
-    .site-header {
-      padding: 48px 0 28px;
-      border-bottom: 1px solid var(--card-border);
-      backdrop-filter: saturate(1.2);
-    }
-    .header__inner { display: grid; gap: 16px; }
-    @media (min-width: 720px) {
-      .header__inner {
-        grid-template-columns: 1fr auto;
-        align-items: center;
-      }
-    }
-    .header__info { min-width: 260px; }
-    h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; font-weight: 800; }
-    .highlight { color: var(--primary); }
-    .subtitle { margin: 0; color: var(--muted); }
-
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      padding: 10px 14px;
-      border-radius: 10px;
-      background: var(--primary);
-      color: var(--primary-contrast);
-      text-decoration: none;
-      font-weight: 600;
-      border: 1px solid transparent;
-      transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
-    }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
-    .btn--ghost {
-      background: transparent;
-      color: var(--text);
-      border: 1px solid var(--card-border);
-    }
-    .btn--ghost:hover { background: rgba(255,255,255,.06); }
-    .social { display: flex; gap: 10px; flex-wrap: wrap; }
-
-    /* Sections */
-    .section { padding: 42px 0; }
-    .section h2 { margin: 0 0 12px 0; font-size: clamp(22px, 3vw, 28px); }
-    .section p { margin: 0; color: var(--text); }
-
-    /* Tags */
-    .tags {
-      display: flex; flex-wrap: wrap; gap: 10px;
-      padding: 0; margin: 10px 0 0 0; list-style: none;
-    }
-    .tag {
-      padding: 8px 12px; border-radius: 999px;
-      border: 1px solid var(--card-border);
-      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(0,0,0,.03));
-      color: var(--text); font-weight: 600; font-size: 14px;
-    }
-
-    /* Skills (medidores) */
-    .skills { display: grid; gap: 12px; margin-top: 12px; }
-    .skill { display: grid; grid-template-columns: 140px 1fr; align-items: center; gap: 12px; }
-    .skill span { font-weight: 700; }
-    .bar {
-      height: 10px; border-radius: 999px; background: rgba(255,255,255,.08);
-      border: 1px solid var(--card-border); overflow: hidden;
-    }
-    .bar > span { display: block; height: 100%; background: linear-gradient(90deg, var(--primary), #38bdf8); }
-    @media (max-width: 560px) { .skill { grid-template-columns: 1fr; } }
-
-    /* Grid de cards */
-    .grid { display: grid; gap: 18px; }
-    @media (min-width: 760px) { .grid { grid-template-columns: repeat(3, 1fr); } }
-
-    .card {
-      background: var(--card); border: 1px solid var(--card-border);
-      border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px;
-      transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(0,0,0,.25);
-      border-color: rgba(14,165,233,.35);
-    }
-    .card__header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-    .card__title { margin: 0; font-size: 18px; }
-    .card__desc { color: var(--muted); margin: 0; }
-    .card__bullets { margin: 0; padding-left: 18px; color: var(--text); }
-    .card__actions { margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap; }
-
-    /* Badges */
-    .badge {
-      display: inline-block; padding: 6px 10px; border-radius: 999px;
-      border: 1px solid var(--card-border); color: var(--muted); font-weight: 600; font-size: 12px;
-    }
-    .badge--success {
-      color: #052e16;
-      background: linear-gradient(180deg, rgba(34,197,94,.25), rgba(34,197,94,.15));
-      border-color: rgba(34,197,94,.35);
-    }
-
-    /* Contact */
-    .contact { list-style: none; padding: 0; margin: 4px 0 0 0; }
-    .contact li { margin: 6px 0; }
-    .contact a { color: var(--primary); text-decoration: none; }
-    .contact a:hover { text-decoration: underline; }
-
-    /* Footer */
-    .site-footer {
-      padding: 28px 0 48px; border-top: 1px solid var(--card-border);
-      color: var(--muted); text-align: center;
-    }
-
-    /* ===== Foto suspensa (hero portrait) ===== */
-    .hero-portrait {
-      --size: clamp(160px, 26vw, 260px);
-      position: relative;
-      width: var(--size);
-      height: var(--size);
-      aspect-ratio: 1 / 1;
-      display: grid;
-      place-items: center;
-      isolation: isolate;
-      margin-left: auto; /* fica à direita no desktop */
-      z-index: 0;
-    }
-
-    .portrait-img {
-      display: block;
-      position: relative;
-      z-index: 1;                 /* acima do brilho */
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow:
-        0 10px 25px rgba(0, 0, 0, .35),
-        0 0 0 1px rgba(255, 255, 255, .06) inset;
-      animation: floatY 6s ease-in-out infinite;
-      will-change: transform;
-    }
-
-    .portrait-glow {
-      position: absolute;
-      inset: -12%;
-      border-radius: 50%;
-      z-index: 0; /* atrás da imagem, sem pilha negativa */
-      background:
-        radial-gradient(60% 60% at 50% 50%, rgba(14,165,233,.25), transparent 70%),
-        radial-gradient(50% 50% at 70% 30%, rgba(34,197,94,.20), transparent 70%);
-      filter: blur(8px);
-      animation: glowPulse 7.5s ease-in-out infinite;
-    }
-
-    @keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-    @keyframes glowPulse { 0%,100%{transform:scale(1);opacity:.9} 50%{transform:scale(1.035);opacity:1} }
-
-    /* Acessibilidade — reduz animações */
-    @media (prefers-reduced-motion: reduce) {
-      .portrait-img, .portrait-glow { animation: none !important; transform: none !important; }
-      .btn, .card { transition: none !important; }
-    }
-  </style>
+  <!-- CSS -->
+  style.css
 </head>
 <body>
-  <!-- Acesso rápido -->
-  #conteudoPular para o conteúdo</a>
 
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
-    <div class="container header__inner">
-      <!-- Texto -->
-      <div class="header__info">
-        <h1>👋 Olá! Eu sou <span class="highlight">Sulivan</span></h1>
-        <p class="subtitle">Estudante de ADS (5º semestre) · Desenvolvedor em formação · Apaixonado por tecnologia 🚀</p>
+#conteudoPular para o conteúdo</a>
 
-        <nav class="social" aria-label="Links sociais">
-          mailto:sulivan.silva07@gmail.comEmail</a>
-          https://www.linkedin.com/in/sullywanLinkedIn</a>
-          https://github.com/Sulivan-GitGitHub</a>
-          #projetosVer projetos</a>
-        </nav>
-      </div>
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="container header__inner">
 
-      <!-- Foto suspensa -->
-      <figure class="hero-portrait" aria-label="Foto de perfil de Sulivan">
-        <picture>
-          <!-- AVIF -->
-          
-              img/sulivan-512.avif 512w,
-              img/sulivan-768.avif 768w,
-              img/sulivan-1024.avif 1024w
-            
-          <!-- WebP -->
-          
-              img/sulivan-512.webp 512w,
-              img/sulivan-768.webp 768w,
-              img/sulivan-1024.webp 1024w
-            
-          <!-- Fallback JPG -->
-          img/sulivan-768.jpg
-        </picture>
-        <span class="portrait-glow" aria-hidden="true"></span>
-      </figure>
+    <!-- Texto -->
+    <div class="header__info">
+      <h1>👋 Olá! Eu sou <span class="highlight">Sulivan</span></h1>
+      <p class="subtitle">Estudante de ADS (5º semestre) · Desenvolvedor em formação · Apaixonado por tecnologia 🚀</p>
+
+      <nav class="social" aria-label="Links sociais">
+        mailto:sulivan.silva07@gmail.comEmail</a>
+        https://www.linkedin.com/in/sullywanLinkedIn</a>
+        https://github.com/Sulivan-GitGitHub</a>
+        #projetosVer projetos</a>
+      </nav>
     </div>
-  </header>
 
-  <main id="conteudo">
-    <!-- SOBRE -->
-    <section class="section" id="sobre" aria-labelledby="sobre-titulo">
-      <div class="container">
-        <h2 id="sobre-titulo">Sobre mim</h2>
-        <p>
-          Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (5º semestre), com foco em
-          <strong>Desenvolvimento Web</strong>, <strong>Java</strong> e <strong>C++</strong>. Gosto de transformar ideias
-          em produtos funcionais. Atualmente, construo projetos práticos e evoluo em estruturas de dados, boas práticas e padrões.
+    <!-- FOTO FLUTUANTE (FUNCIONANDO) -->
+    <figure class="hero-portrait" aria-label="Foto de perfil de Sulivan">
+      <picture>
+        <!-- AVIF -->
+        
+            img/sulivan-512.avif 512w,
+            img/sulivan-768.avif 768w,
+            img/sulivan-1024.avif 1024w
+          
+
+        <!-- WebP -->
+        
+            img/sulivan-512.webp 512w,
+            img/sulivan-768.webp 768w,
+            img/sulivan-1024.webp 1024w
+          
+
+        <!-- JPG Fallback -->
+        img/sulivan-768.jpg
+      </picture>
+
+      <span class="portrait-glow" aria-hidden="true"></span>
+    </figure>
+
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- SOBRE -->
+<section class="section" id="sobre">
+  <div class="container">
+    <h2>Sobre mim</h2>
+    <p>
+      Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (5º semestre), com foco em
+      <strong>Desenvolvimento Web</strong>, <strong>Java</strong> e <strong>C++</strong>.
+      Gosto de transformar ideias em produtos funcionais.
+    </p>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section class="section" id="habilidades">
+  <div class="container">
+    <h2>Habilidades & Tecnologias</h2>
+
+    <ul class="tags" role="list">
+      <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+      <li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">C</li>
+      <li class="tag">C++</li><li class="tag">Java</li><li class="tag">SQL</li>
+    </ul>
+
+    <div class="skills">
+      <div class="skill"><span>Java</span><div class="bar"><span style="width: 80%"></span></div></div>
+      <div class="skill"><span>C / C++</span><div class="bar"><span style="width: 80%"></span></div></div>
+      <div class="skill"><span>Web (HTML/CSS/JS)</span><div class="bar"><span style="width: 65%"></span></div></div>
+      <div class="skill"><span>Git / GitHub</span><div class="bar"><span style="width: 60%"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section class="section" id="projetos">
+  <div class="container">
+    <h2>Projetos</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <header class="card__header">
+          <h3 class="card__title">Peneirada FC — Rede social para atletas</h3>
+          <span class="badge badge--success">Em produção</span>
+        </header>
+        <p class="card__desc">
+          Plataforma web que conecta atletas, clubes e peneiras.
         </p>
-      </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section class="section" id="habilidades" aria-labelledby="skills-titulo">
-      <div class="container">
-        <h2 id="skills-titulo">Habilidades &amp; Tecnologias</h2>
-
-        <ul class="tags" role="list">
-          <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
-          <li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">C</li>
-          <li class="tag">C++</li><li class="tag">Java</li><li class="tag">SQL</li>
+        <ul class="card__bullets">
+          <li><strong>Papel:</strong> Front + integração</li>
+          <li><strong>Stack:</strong> HTML, CSS, JS, GitHub</li>
+          <li><strong>Impacto:</strong> produto real em uso</li>
         </ul>
-
-        <!-- Medidores -->
-        <div class="skills">
-          <div class="skill"><span>Java</span><div class="bar"><span style="width: 80%"></span></div></div>
-          <div class="skill"><span>C / C++</span><div class="bar"><span style="width: 80%"></span></div></div>
-          <div class="skill"><span>Web (HTML/CSS/JS)</span><div class="bar"><span style="width: 65%"></span></div></div>
-          <div class="skill"><span>Git / GitHub</span><div class="bar"><span style="width: 60%"></span></div></div>
+        <div class="card__actions">
+          https://peneirada.acilab.com.br/Visitar</a>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <!-- PROJETOS -->
-    <section class="section" id="projetos" aria-labelledby="projetos-titulo">
-      <div class="container">
-        <h2 id="projetos-titulo">Projetos</h2>
+      <article class="card">
+        <header class="card__header">
+          <h3 class="card__title">G-Stock — Sistema de estoque</h3>
+          <span class="badge">Java + Banco de Dados</span>
+        </header>
+        <p class="card__desc">CRUD completo com JDBC e arquitetura MVC.</p>
+      </article>
 
-        <div class="grid">
-          <!-- Peneirada FC -->
-          <article class="card">
-            <header class="card__header">
-              <h3 class="card__title">Peneirada FC — Rede social para atletas</h3>
-              <span class="badge badge--success" aria-label="Em produção">Em produção</span>
-            </header>
-            <p class="card__desc">
-              Plataforma web que conecta atletas, clubes e peneiras. Interface moderna e responsiva,
-              com foco em experiência do usuário.
-            </p>
-            <ul class="card__bullets">
-              <li><strong>Papel:</strong> desenvolvimento front e integração</li>
-              <li><strong>Stack:</strong> HTML, CSS, JavaScript, GitHub</li>
-              <li><strong>Impacto:</strong> produto real em uso</li>
-              <li><strong>Aprendizado:</strong> UI, componentes, versionamento</li>
-            </ul>
-            <div class="card__actions">
-              https://peneirada.acilab.com.br/Visitar</a>
-            </div>
-          </article>
+      <article class="card">
+        <header class="card__header">
+          <h3 class="card__title">Biblioteca (C/C++)</h3>
+          <span class="badge">C/C++</span>
+        </header>
+        <p class="card__desc">Cadastro e consulta usando arrays, estruturas e ponteiros.</p>
+      </article>
 
-          <!-- G-Stock -->
-          <article class="card">
-            <header class="card__header">
-              <h3 class="card__title">G-Stock — Sistema de gerenciamento de estoque</h3>
-              <span class="badge">Java + Banco de Dados</span>
-            </header>
-            <p class="card__desc">
-              Sistema em Java com cadastro de produtos, entrada/saída, clientes, fornecedores e vendas.
-              Foco em CRUD, persistência (JDBC) e boas práticas (camadas/MVC).
-            </p>
-            <ul class="card__bullets">
-              <li>Java + JDBC</li>
-              <li>Arquitetura em camadas (MVC)</li>
-              <li>Telas de CRUD</li>
-            </ul>
-            <div class="card__actions">
-              <!-- Adicione quando tiver -->
-              <!-- #Demo</a> -->
-              <!-- #Código</a> -->
-            </div>
-          </article>
-
-          <!-- Biblioteca C/C++ -->
-          <article class="card">
-            <header class="card__header">
-              <h3 class="card__title">Sistema de Biblioteca (C/C++)</h3>
-              <span class="badge">C/C++</span>
-            </header>
-            <p class="card__desc">
-              Aplicação em C/C++ utilizando arrays, estruturas heterogêneas e ponteiros para cadastro e consulta
-              de livros, usuários e empréstimos.
-            </p>
-            <ul class="card__bullets">
-              <li>Estruturas &amp; ponteiros</li>
-              <li>Cadastro e consultas</li>
-              <li>Foco em fundamentos</li>
-            </ul>
-            <div class="card__actions">
-              <!-- #Código</a> -->
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section class="section" id="contato" aria-labelledby="contato-titulo">
-      <div class="container">
-        <h2 id="contato-titulo">Contato</h2>
-        <ul class="contact" role="list">
-          <li><strong>Email:</strong> mailto:sulivan.silva07@gmail.comsulivan.silva07@gmail.com</a></li>
-          <li><strong>LinkedIn:</strong> https://www.linkedin.com/in/sullywanlinkedin.com/in/sullywan</a></li>
-          <li><strong>GitHub:</strong> https://github.com/Sulivan-Gitgithub.com/Sulivan-Git</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <p>© <span id="ano"></span> · Portfólio de <strong>Sulivan</strong></p>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Ano automático -->
-  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+<!-- CONTATO -->
+<section class="section" id="contato">
+  <div class="container">
+    <h2>Contato</h2>
+    <ul class="contact" role="list">
+      <li><strong>Email:</strong> mailto:sulivan.silva07@gmail.comsulivan.silva07@gmail.com</a></li>
+      <li><strong>LinkedIn:</strong> https://www.linkedin.com/in/sullywanlinkedin.com/in/sullywan</a></li>
+      <li><strong>GitHub:</strong> https://github.com/Sulivan-Git</li>
+    </ul>
+  </div>
+</section>
 
-  <!-- Schema.org (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sulivan de Oliveira Silva",
-    "url": "https://sulivan-git.github.io",
-    "image": "https://sulivan-git.github.io/og-image.png",
-    "jobTitle": "Desenvolvedor em formação",
-    "alumniOf": "ADS",
-    "knowsAbout": ["Java", "C++", "Web", "POO", "Estruturas de Dados", "Git"],
-    "sameAs": [
-      "https://github.com/Sulivan-Git",
-      "https://www.linkedin.com/in/sullywan"
-    ]
-  }
-  </script>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>© <span id="ano"></span> · Portfólio de <strong>Sulivan</strong></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sulivan de Oliveira Silva",
+  "url": "https://sulivan-git.github.io",
+  "image": "https://sulivan-git.github.io/og-image.png",
+  "jobTitle": "Desenvolvedor em formação",
+  "alumniOf": "ADS",
+  "sameAs": [
+    "https://github.com/Sulivan-Git",
+    "https://www.linkedin.com/in/sullywan"
+  ]
+}
+</script>
+
 </body>
 </html>
