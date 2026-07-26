@@ -5,239 +5,379 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Portfólio · Sulivan de Oliveira Silva</title>
-  <meta name="description" content="Portfólio de Sulivan de Oliveira Silva — estudante de ADS (5º semestre), focado em Java, C++ e Desenvolvimento Web. Projetos: Peneirada FC (produção), G-Stock e Sistema de Biblioteca.">
-  <meta name="theme-color" content="#0f172a" />
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://sulivan-git.github.io/" />
-
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Portfólio · Sulivan de Oliveira Silva" />
-  <meta property="og:description" content="Estudante de ADS (5º semestre). Projetos em destaque: Peneirada FC (produção), G-Stock (Java) e Sistema de Biblioteca (C/C++)." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sulivan-git.github.io/" />
-  <meta property="og:image" content="https://sulivan-git.github.io/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Prévia do portfólio de Sulivan de Oliveira Silva" />
-  <meta property="og:site_name" content="Portfólio · Sulivan de Oliveira Silva" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png" />
-
+  <title>Sulivan Silva | Software Developer</title>
+  <meta name="description" content="Portfólio de Sulivan de Oliveira Silva — Graduado em ADS, focado em Java, C++ e Desenvolvimento Web.">
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <!-- Preload (opcional) da imagem hero para melhorar LCP -->
-  <link
-    rel="preload"
-    as="image"
-    href="img/sulivan-768.jpg"
-    imagesrcset="
-      img/sulivan-512.jpg 512w,
-      img/sulivan-768.jpg 768w,
-      img/sulivan-1024.jpg 1024w
-    "
-    imagesizes="(max-width: 720px) 160px, 260px"
-  />
+  <style>
+    :root {
+      --bg: #050505;
+      --card-bg: rgba(20, 20, 20, 0.7);
+      --accent: #00f2ff;
+      --accent-secondary: #7000ff;
+      --text-main: #ffffff;
+      --text-dim: #a0a0a0;
+      --glass: rgba(255, 255, 255, 0.03);
+      --border: rgba(255, 255, 255, 0.1);
+    }
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Efeito de fundo futurista */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(0, 242, 255, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(112, 0, 255, 0.05) 0%, transparent 40%);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* HEADER / HERO */
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero-content {
+      text-align: center;
+      z-index: 1;
+    }
+
+    .badge-top {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(to right, #fff, #888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-dim);
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .btn-primary {
+      background: var(--text-main);
+      color: var(--bg);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-outline:hover {
+      background: var(--glass);
+      border-color: var(--accent);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 8rem 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .section-title::after {
+      content: '';
+      height: 1px;
+      background: var(--border);
+      flex-grow: 1;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      border-radius: 24px;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tech-tag {
+      background: var(--glass);
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+
+    /* SKILLS */
+    .skills-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .skill-item {
+      margin-bottom: 2rem;
+    }
+
+    .skill-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .skill-bar {
+      height: 6px;
+      background: var(--glass);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .skill-progress {
+      height: 100%;
+      background: linear-gradient(to right, var(--accent-secondary), var(--accent));
+      border-radius: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 4rem 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 768px) {
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+      header {
+        height: auto;
+        padding: 8rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Acesso rápido -->
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
-    <div class="container header__inner">
-      <!-- Texto -->
-      <div class="header__info">
-        <h1>👋 Olá! Eu sou <span class="highlight">Sulivan</span></h1>
-        <p class="subtitle">Estudante de ADS (5º semestre) · Desenvolvedor em formação · Apaixonado por tecnologia 🚀</p>
-
-        <nav class="social" aria-label="Links sociais">
-          <a class="btn btn--ghost" href="mailto:sulivan.silva07@gmail.com" target="_blank" rel="noopener">Email</a>
-          <a class="btn btn--ghost" href="https://www.linkedin.com/in/sullywan" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn--ghost" href="https://github.com/Sulivan-Git" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="#projetos">Ver projetos</a>
-        </nav>
+  <header>
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge-top">Graduado em ADS</span>
+        <h1>Sulivan Silva</h1>
+        <p class="subtitle">Transformando lógica complexa em experiências digitais excepcionais. Especialista em Java, C++ e ecossistema Web moderno.</p>
+        <div class="hero-btns">
+          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn-outline">Contato</a>
+        </div>
       </div>
-
-      <!-- Foto suspensa (flutuante) -->
-      <figure class="hero-portrait" aria-label="Foto de perfil de Sulivan">
-        <!-- Versão simples e garantida (JPG com srcset). 
-             Quando quiser, adicione <source> para AVIF/WebP acima do <img>. -->
-        <img
-          src="img/sulivan-768.jpg"
-          srcset="
-            img/sulivan-512.jpg 512w,
-            img/sulivan-768.jpg 768w,
-            img/sulivan-1024.jpg 1024w
-          "
-          sizes="(max-width: 720px) 160px, 260px"
-          width="260" height="260"
-          alt="Foto de Sulivan"
-          class="portrait-img"
-          decoding="async"
-          fetchpriority="high"
-          loading="eager"
-        />
-        <span class="portrait-glow" aria-hidden="true"></span>
-      </figure>
     </div>
   </header>
 
-  <main id="conteudo">
-    <!-- SOBRE -->
-    <section class="section" id="sobre" aria-labelledby="sobre-titulo">
-      <div class="container">
-        <h2 id="sobre-titulo">Sobre mim</h2>
-        <p>
-          Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (5º semestre), com foco em
-          <strong>Desenvolvimento Web</strong>, <strong>Java</strong> e <strong>C++</strong>. Gosto de transformar ideias
-          em produtos funcionais. Atualmente, construo projetos práticos e evoluo em estruturas de dados, boas práticas e padrões.
+  <main class="container">
+    
+    <section id="sobre">
+      <h2 class="section-title">Sobre</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: 1.2rem; color: var(--text-dim);">
+          Graduado em <strong>Análise e Desenvolvimento de Sistemas</strong> pelo SENAC CE. 
+          Minha jornada é movida pela curiosidade técnica e pelo rigor acadêmico. 
+          Desenvolvo softwares robustos com foco em <strong>arquitetura limpa</strong> e <strong>performance</strong>.
         </p>
       </div>
     </section>
 
-    <!-- HABILIDADES -->
-    <section class="section" id="habilidades" aria-labelledby="skills-titulo">
-      <div class="container">
-        <h2 id="skills-titulo">Habilidades &amp; Tecnologias</h2>
-
-        <ul class="tags" role="list">
-          <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
-          <li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">C</li>
-          <li class="tag">C++</li><li class="tag">Java</li><li class="tag">SQL</li>
-        </ul>
-
-        <!-- Medidores -->
-        <div class="skills">
-          <div class="skill"><span>Java</span><div class="bar"><span style="width: 80%"></span></div></div>
-          <div class="skill"><span>C / C++</span><div class="bar"><span style="width: 80%"></span></div></div>
-          <div class="skill"><span>Web (HTML/CSS/JS)</span><div class="bar"><span style="width: 65%"></span></div></div>
-          <div class="skill"><span>Git / GitHub</span><div class="bar"><span style="width: 60%"></span></div></div>
+    <section id="habilidades">
+      <h2 class="section-title">Tecnologias</h2>
+      <div class="skills-container">
+        <div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Java / Spring Boot</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>C / C++</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Frontend (React/JS)</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>SQL / PostgreSQL</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJETOS -->
-    <section class="section" id="projetos" aria-labelledby="projetos-titulo">
-      <div class="container">
-        <h2 id="projetos-titulo">Projetos</h2>
+    <section id="projetos">
+      <h2 class="section-title">Projetos em Destaque</h2>
+      <div class="grid">
+        <article class="card">
+          <span style="color: var(--accent); font-size: 0.8rem; font-weight: 600;">PRODUÇÃO</span>
+          <h3 style="margin-top: 0.5rem;">Peneirada FC</h3>
+          <p>Rede social completa para conexão entre atletas e clubes profissionais.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">UX/UI</span>
+          </div>
+          <a href="https://peneirada.acilab.com.br/" target="_blank" style="display: block; margin-top: 1.5rem; color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 600;">Ver projeto →</a>
+        </article>
 
-        <div class="grid">
-          <!-- Peneirada FC -->
-          <article class="card">
-            <header class="card__header">
-              <h3 class="card__title">Peneirada FC — Rede social para atletas</h3>
-              <span class="badge badge--success" aria-label="Em produção">Em produção</span>
-            </header>
-            <p class="card__desc">
-              Plataforma web que conecta atletas, clubes e peneiras. Interface moderna e responsiva,
-              com foco em experiência do usuário.
-            </p>
-            <ul class="card__bullets">
-              <li><strong>Papel:</strong> desenvolvimento front e integração</li>
-              <li><strong>Stack:</strong> HTML, CSS, JavaScript, GitHub</li>
-              <li><strong>Impacto:</strong> produto real em uso</li>
-              <li><strong>Aprendizado:</strong> UI, componentes, versionamento</li>
-            </ul>
-            <div class="card__actions">
-              <a class="btn" href="https://peneirada.acilab.com.br/" target="_blank" rel="noopener">Visitar</a>
-            </div>
-          </article>
+        <article class="card">
+          <span style="color: var(--accent-secondary); font-size: 0.8rem; font-weight: 600;">SISTEMA</span>
+          <h3 style="margin-top: 0.5rem;">G-Stock</h3>
+          <p>Gestão de inventário com arquitetura MVC e persistência JDBC.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">MVC</span>
+          </div>
+        </article>
 
-          <!-- G-Stock -->
-          <article class="card">
-            <header class="card__header">
-              <h3 class="card__title">G-Stock — Sistema de gerenciamento de estoque</h3>
-              <span class="badge">Java + Banco de Dados</span>
-            </header>
-            <p class="card__desc">
-              Sistema em Java com cadastro de produtos, entrada/saída, clientes, fornecedores e vendas.
-              Foco em CRUD, persistência (JDBC) e boas práticas (camadas/MVC).
-            </p>
-            <ul class="card__bullets">
-              <li>Java + JDBC</li>
-              <li>Arquitetura em camadas (MVC)</li>
-              <li>Telas de CRUD</li>
-            </ul>
-            <div class="card__actions">
-              <!-- Links futuros de demo/código -->
-            </div>
-          </article>
+        <article class="card">
+          <span style="color: #ffaa00; font-size: 0.8rem; font-weight: 600;">ALGORITMOS</span>
+          <h3 style="margin-top: 0.5rem;">Library Core</h3>
+          <p>Sistema de biblioteca otimizado com estruturas de dados avançadas.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Ponteiros</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-          <!-- Biblioteca C/C++ -->
-          <article class="card">
-            <header class="card__header">
-              <h3 class="card__title">Sistema de Biblioteca (C/C++)</h3>
-              <span class="badge">C/C++</span>
-            </header>
-            <p class="card__desc">
-              Aplicação em C/C++ utilizando arrays, estruturas heterogêneas e ponteiros para cadastro e consulta
-              de livros, usuários e empréstimos.
-            </p>
-            <ul class="card__bullets">
-              <li>Estruturas &amp; ponteiros</li>
-              <li>Cadastro e consultas</li>
-              <li>Foco em fundamentos</li>
-            </ul>
-            <div class="card__actions">
-              <!-- Link futuro do repositório -->
-            </div>
-          </article>
+    <section id="contato">
+      <h2 class="section-title">Vamos conversar?</h2>
+      <div style="text-align: center; padding: 4rem; background: var(--glass); border-radius: 32px; border: 1px solid var(--border);">
+        <p style="margin-bottom: 2rem; color: var(--text-dim);">Sempre aberto para novos desafios e colaborações inovadoras.</p>
+        <div class="hero-btns">
+          <a href="mailto:sulivan.silva07@gmail.com" class="btn btn-primary">Enviar Email</a>
+          <a href="https://www.linkedin.com/in/sullywan" target="_blank" class="btn btn-outline">LinkedIn</a>
         </div>
       </div>
     </section>
 
-    <!-- CONTATO -->
-    <section class="section" id="contato" aria-labelledby="contato-titulo">
-      <div class="container">
-        <h2 id="contato-titulo">Contato</h2>
-        <ul class="contact" role="list">
-          <li><strong>Email:</strong> <a href="mailto:sulivan.silva07@gmail.com">sulivan.silva07@gmail.com</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sullywan" target="_blank" rel="noopener">linkedin.com/in/sullywan</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/Sulivan-Git" target="_blank" rel="noopener">github.com/Sulivan-Git</a></li>
-        </ul>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer>
     <div class="container">
-      <p>© <span id="ano"></span> · Portfólio de <strong>Sulivan</strong></p>
+      <p>© <span id="year"></span> | Desenvolvido por Sulivan Silva</p>
     </div>
   </footer>
 
-  <!-- Ano automático -->
   <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-  </script>
-
-  <!-- Schema.org (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sulivan de Oliveira Silva",
-    "url": "https://sulivan-git.github.io",
-    "image": "https://sulivan-git.github.io/og-image.png",
-    "jobTitle": "Desenvolvedor em formação",
-    "alumniOf": "ADS",
-    "knowsAbout": ["Java", "C++", "Web", "POO", "Estruturas de Dados", "Git"],
-    "sameAs": [
-      "https://github.com/Sulivan-Git",
-      "https://www.linkedin.com/in/sullywan"
-    ]
-  }
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
