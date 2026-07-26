@@ -1,23 +1,23 @@
-
-
 # 👋 Olá! Eu sou o Sulivan de Oliveira Silva
 
-🎓 Estudante de Análise e Desenvolvimento de Sistemas (5º semestre)  
-💻 Desenvolvedor em formação, apaixonado por tecnologia, projetos práticos e soluções que ajudam pessoas  
-🚀 Buscando oportunidades para evoluir e aplicar meus conhecimentos no mercado  
+🎓 **Graduado em Análise e Desenvolvimento de Sistemas**  
+💻 Desenvolvedor de Software | PHP • Laravel • Java • C++  
+🤖 IA Aplicada | UX/UI | Focado em soluções escaláveis e acessíveis  
+🚀 Transformando lógica em impacto real no mercado de tecnologia  
 
 ---
 
 ## 🚀 Sobre mim
-- 🎓 Foco em **desenvolvimento**, **estrutura de dados** e práticas modernas de programação  
-- 💡 Objetivo: crescer como desenvolvedor e ingressar na área de tecnologia  
-- 🛠️ Projetos atuais:
-  - **G-Stock** — Sistema de Gerenciamento de Estoque *(Projeto Integrador)*  
-  - **Sistema de Biblioteca** em **C/C++**  
-  - **Peneirada FC** — Rede social e plataforma web em produção  
-- 🌎 Portfólio: https://sulivan-git.github.io/  
-- 🔗 LinkedIn: https://www.linkedin.com/in/sullywan  
-- 💼 Curriculo: https://curriculo.sougov.economia.gov.br/sulivan-silva-321701528
+- 🎓 **Formação:** Graduado em Análise e Desenvolvimento de Sistemas pelo SENAC CE.  
+- 💡 **Expertise:** Sólida base em **estruturas de dados**, **arquitetura de software** e **desenvolvimento fullstack**.  
+- 🛠️ **Projetos de Destaque:**
+  - **Peneirada FC** — Plataforma real em produção conectando atletas e clubes.  
+  - **G-Stock** — Sistema de gestão de estoque robusto em Java.  
+  - **Library Core** — Algoritmos avançados e gestão de acervo em C++.  
+- 🌎 **Portfólio:** https://sulivan-git.github.io/  
+- 🔗 **LinkedIn:** https://www.linkedin.com/in/sullywan  
+- 💼 **Currículo:** https://curriculo.sougov.economia.gov.br/sulivan-silva-321701528
+
 ---
 
 ## 🧠 Habilidades & Tecnologias
@@ -31,6 +31,8 @@
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
 
 ---
 
@@ -43,49 +45,23 @@
 
 ## 📚 Projetos em Destaque
 
----
-
 ### 🔸 **Peneirada FC — Rede Social para Atletas**  
-➡️ **Projeto em produção:** https://peneirada.acilab.com.br/  
-✔ Plataforma real funcionando, voltada para atletas, clubes e peneiras  
-✔ Interface moderna e totalmente responsiva  
-✔ Experiência prática em UX, UI e desenvolvimento web  
-✔ Conecta jovens atletas a oportunidades profissionais  
+➡️ **Status:** Em produção | https://peneirada.acilab.com.br/  
+✔ Conecta jovens atletas a oportunidades profissionais em clubes reais.  
+✔ Arquitetura escalável com foco em performance e acessibilidade.  
 
----
-
-### 🔸 **G-Stock — Sistema de Gerenciamento de Estoque**
-✔ Desenvolvido em **Java + Banco de Dados**  
-✔ Interface intuitiva  
-✔ Registro de entrada e saída  
-✔ Controle de clientes, fornecedores e vendas  
-
----
+### 🔸 **G-Stock — Gestão de Estoque Profissional**
+✔ Desenvolvido em **Java + JDBC** com arquitetura **MVC**.  
+✔ Controle rigoroso de fluxo de mercadorias, fornecedores e vendas.  
 
 ### 🔸 **Sistema de Biblioteca (C/C++)**
-✔ Uso de arrays  
-✔ Estruturas heterogêneas  
-✔ Ponteiros  
-✔ Cadastro e consulta de livros, usuários e empréstimos  
+✔ Implementação de algoritmos de busca e ordenação.  
+✔ Gestão de memória eficiente com ponteiros e estruturas heterogêneas.  
 
 ---
 
-## 🌱 O que estou estudando agora
-- Estruturas de Dados *(com o professor Nator Junior)*  
-- Java + JDBC  
-- GitHub Student Developer Pack (para montar portfólio profissional)  
-- UML: casos de uso, sequência, classes e arquitetura de software  
-
----
-
-## 🎯 Objetivo
-Construir uma carreira sólida em tecnologia, começando como **estagiário na área de desenvolvimento**, expandindo habilidades e criando projetos reais que tragam impacto.
-
----
-
-## 📈 Contribuições
-
-![Contribution Graph](https://github-readme-activity-graph.cyclic.app/graph?username=Sulivan-Git&theme=react-dark)
+## 🎯 Objetivo Profissional
+Como graduado em ADS, busco atuar como **Desenvolvedor de Software**, aplicando minha capacidade analítica e técnica para construir sistemas que resolvam problemas complexos e gerem valor para os usuários.
 
 ---
 
@@ -98,4 +74,4 @@ Construir uma carreira sólida em tecnologia, começando como **estagiário na �
 ---
 
 ✨ **Obrigado por visitar meu perfil!**  
-Sempre aberto para aprender, trocar conhecimento e participar de novos projetos 🚀
+Pronto para novos desafios e colaborações inovadoras 🚀
