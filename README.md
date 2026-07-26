@@ -8,7 +8,7 @@
 ---
 
 ## 🚀 Sobre mim
-- 🎓 **Formação:** Graduado em Análise e Desenvolvimento de Sistemas pelo SENAC CE.  
+- 🎓 **Formação:** Graduado em Análise e Desenvolvimento de Sistemas pela Faculdade SENAC Ceará.  
 - 💡 **Expertise:** Sólida base em **estruturas de dados**, **arquitetura de software** e **desenvolvimento fullstack**.  
 - 🛠️ **Projetos de Destaque:**
   - **Peneirada FC** — Plataforma real em produção conectando atletas e clubes.  
